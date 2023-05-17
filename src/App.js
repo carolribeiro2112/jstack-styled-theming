@@ -4,11 +4,11 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
 import Layout from './components/Layout';
 
-import dark from './styles/themes/dark';
+import themes from './styles/themes';
 
 function App() {
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={themes.light}>
       <GlobalStyle />
       <Layout />
     </ThemeProvider>
